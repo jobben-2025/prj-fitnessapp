@@ -1,0 +1,260 @@
+
+/* Color variables */
+:root {
+    --violet: #730275;
+    --red: #c00202;
+    --grey0: #c2c1c1;
+    --grey1: #a1a1a1;
+    --grey2: #7a7777;
+    --black: #1A1A1A;
+    --white: #FFFFFF;
+    
+    --bg-primary: var(--black);
+    
+    --foreground-dark: var(--grey2);
+    --foreground-medium: var(--grey1);
+    --foreground-light: var(--grey0);
+    
+
+    --fancy-gradient: linear-gradient(
+      in rgba to bottom right,
+      var(--violet),
+      var(--red)
+    );
+
+    --gradient-red-grey: linear-gradient(
+      in rgba to bottom right,
+      var(--red),
+      var(--grey2) $0
+    );
+
+    color-scheme: light dark;
+}
+
+
+* {
+    font-family: system-ui;
+    font-size: 3vw;
+}
+
+a {
+    color: var(--violet);
+    padding-right: 5vw;
+    
+}
+
+
+body {
+    padding: 2vw 2vw 2vw 2vw;
+    background-color: var(--bg-primary);
+    color: var(--black);
+    font-family: Verdana;
+}
+
+header {
+    color: var(--grey1);
+}
+
+header p {
+    font-size: 1.5vw;
+    text-align: right;
+}
+
+footer {
+    color: var(--grey1);
+}
+
+footer p {
+    font-size: 1.5vw;
+    text-align: right;
+}
+
+#flexcontainer {
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#flexcontainer div {
+    display: inline;
+    /* width: 10px; */
+    align-items: flex-end;
+    
+
+}
+
+#flexcontainer2 {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+#flexcontainer2 div {
+    display: inline;
+    /* width: 10px; */
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.logo img {
+    border-radius: 0.5vw;
+    width: 22vw;
+}
+
+#flexitem img {
+    width: 22vw;
+}
+
+#video iframe {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 60vw;
+    height:34vw;
+    border-color: #c00202;
+    border-width: 1vw;
+}
+
+#features figcaption, #features2 figcaption {
+    font-size: 2vw;
+}
+
+
+nav li, li {
+    list-style: none;
+    display: inline;
+    font-size: 2vw;
+    
+}
+
+/* 
+div.logo img {
+    width: 35%;
+    border-radius: 3%;
+    /* float:left; 
+} */
+
+section {
+    padding: 2vw 2vw;
+    border-radius: 0.5vw;
+    
+}
+
+section.dark {
+    background-color: var(--foreground-dark);
+}
+
+section.medium {
+    background-color: var(--foreground-medium);
+}
+
+section.light {
+    background-color: var(--foreground-light);
+}
+
+/* Definition for a 5 column design, used once */
+div.gallery {
+    display: grid;
+    
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 2vw;
+    /* padding-right: 200px; */
+}
+div.gallery p {
+    align-items: center;
+}
+div.gallery img {
+    width: 100%;
+    align-items: center;
+    border-radius: 1vw;
+    border-style: groove;
+    border-color: #c00202;
+    border-width: 0.25vw;
+}
+
+/* Definition for a 3 column design, used twice */
+div.gallery2 {
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    /* column-gap: 1rem; */
+    /* padding-right: 200px; */
+}
+
+div.gallery2 figure img {
+    width: 22vw;
+    align-items: center;
+    border-radius: 1vw;
+    border-style: groove;
+    border-color: #c00202;
+    border-width: 0.25vw;
+}
+
+table {
+    border-radius: 1vw;
+    
+}
+
+
+.socialm li img {
+    padding-right: 2vw;
+    width: 10vw;
+    
+}
+
+
+.pricing-table {
+    background-color: var(--grey0);
+    border-spacing: 0.75vw;
+    
+    
+}
+
+tr, td, th {
+    /* padding: 0.5vw; */
+    font-size: 1.5vw;
+}
+
+.investment-col {
+    color: var(--red);
+}
+
+.tier-starter, .tier-ultimate {
+    color: var(--white)
+}
+
+
+
+/* ADDING RESPONSIVE DESIGN PARAMETERS AFTER FINALIZING PROT-A */
+@media only screen and (max-width: 600px) {
+    /* CSS rules for extra small screens */
+  }
+   
+  /* Small devices (portrait tablets and large phones, 600px to 768px) */
+  @media only screen and (min-width: 601px) and (max-width: 768px) {
+    /* CSS rules for small screens */
+  }
+   
+  /* Medium devices (landscape tablets, 768px to 992px) */
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* CSS rules for medium screens */
+  }
+   
+  /* Large devices (laptops/desktops, 992px to 1200px) */
+  @media only screen and (min-width: 993px) and (max-width: 1200px) {
+    /* CSS rules for large screens */
+  }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media only screen and (min-width: 1201px) {
+    /* CSS rules for extra large screens */
+  }
+
+
+
+
+
+
