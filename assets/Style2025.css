@@ -217,33 +217,40 @@ input[type=radio] {
 
 
 /* ADDING RESPONSIVE DESIGN PARAMETERS AFTER FINALIZING PROT-A */
-@media only screen and (max-width: 350) {
+@media only screen and (max-width: 350px) {
     /* from 3 to 2 */
     div.gallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        column-gap: 2vw;
+        row-gap: 2vw;
     }
     
     /* from 2 to 1 */
     div.gallery2 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        column-gap: 2vw;
+        row-gap: 2vw;
     }
 }
    
   /* Small devices (portrait tablets and large phones, 600px to 768px) */
-@media only screen and (min-width: 351) and (max-width: 1000px) {
+@media only screen and (min-width: 351px) and (max-width: 1000px) {
     /* from 5 to 3 */
     div.gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2vw;
+        row-gap: 2vw;
     }
     
     /* from 3 to 2 */
     div.gallery2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        column-gap: 2vw;
+        row-gap: 2vw;
     }
 }
    
