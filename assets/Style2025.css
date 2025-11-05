@@ -113,6 +113,7 @@ footer p {
     height:34vw;
     border-color: #c00202;
     border-width: 1vw;
+    border-radius: 1.5vw;
 }
 
 #features figcaption, #features2 figcaption {
